@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css'>
+ <link href="https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:400,700" rel="stylesheet">  
+      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+      <style>
+          
+/**
+ * Base styles
+ */
+body {
+ font: 100% / 1.414 'Open Sans', sans-serif; 
+     background-color: #F7F7F9;
+
+;
+}
+          
+ h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pacifico', cursive;
+ }          
+/**
+ * Layout styles
+ */
+header {
+ padding-top: 2rem;
+ padding-bottom: 2rem;
+}
+/**
+ * Button component
+ */
+.btn {
+ position: relative;
+ top: 0;
+ margin-top: 50%;
+ opacity: 0;
+ font-size: 1rem;
+ color: #fff;
+ border-radius: 2.1875rem;
+ -webkit-transform: translateY(-50%);
+ -ms-transform: translateY(-50%);
+ transform: translateY(-50%);
+ -webkit-transition: all .25s ease-in-out;
+ transition: all .25s ease-in-out;
+}
+.btn:focus, .btn:hover {
+ color: #111;
+ background-color: #fff;
+ border-color: #fff;
+}
+/**
+ * Grid styles
+ */
+.item__overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(17, 17, 17, 0.45);
+ -webkit-transition: background-color .55s ease-in-out;
+ transition: background-color .55s ease-in-out;
+}
+.item__overlay:focus, .item__overlay:hover {
+ background-color: rgba(17, 17, 17, 0.05);
+}
+.item__overlay:focus > button, .item__overlay:hover > button {
+ opacity: 1;
+}
+.grid__sizer,
+.grid__item {
+ position: relative;
+ width: 20%;
+ min-width: 16.25rem;
+}
+.grid__item {
+ margin-bottom: .9375rem;
+ border-radius: 0.25rem;
+ overflow: hidden;
+}
+.grid__item--high,
+.grid__item--high img {
+ height: 30rem;
+}
+img {
+ width: 100%;
+ max-width: 100%;
+ height: auto;
+}
+/**
+ * Link styles
+ */
+a,
+.fa {
+ color: #bbb;
+ -webkit-transition: color .25s ease-in-out;
+ transition: color .25s ease-in-out;
+}
+a:focus, a:hover,
+.fa:focus,
+.fa:hover {
+ text-decoration: none;
+ color: #666;
+}
+.active .fa {
+ color: #f62459;
+}
+      /****
+          ***/
+.card {
+    height: 700px;
+margin-top: 50%;
+border: 4px solid black;
+    margin-left: 25%;
+    width: 60%;
+   vertical-align: middle;
+    text-align: center;
+}
+          .card span {text-align: left;}
+          .card li {width: 90%; margin: 0 auto; text-align: left;}
+          .card p {margin-top: 3%; width: 90%;}
+          .social span { margin: 2%;
+          vetrical-align: middle;}
+          
+          hr {margin-bottom: 3%;}
+          
+          #contact span {vertical-align: middle;}
+          .rounded {
+              width: 250px;
+              height: 250px;
+              border-radius: 100%;}
+          .left { background: linear-gradient (#A1FFCE, #FAFFD1); background: -moz-linear-gradient (#A1FFCE, #FAFFD1);}
+          a {color: black;}
+          footer {margin-bottom: 1%;}
+</style>
+  </head>
+  <body class="container-fluid">
+      
+      <div class="row">
+      <!-- INIZIO SEZIONE INFO -->
+       <div class="col-md-4 col-lg-4 left">
+      
+        <header class="col-md-6 col-lg-6 centered card">
+                <h1>Jane Doe</h1>
+            <hr>
+                <img src="img/floral%20pattern.jpg" class="rounded responsive"/>
+                <h2>Flora and fauna illustrator</h2>
+            <nav>
+                <ul class="nav navbar-nav ">
+                    <li><b>Skills</b></li>
+                    <li>Illustrator</li>
+                    <li>Photoshop</li>
+                    <li>Inkscape</li>
+                    <li>Gimp</li>
+                </ul>
+            </nav>
+            <p> Professional illustrator since 2009 based in NYC, and everywhere you need my creativity</p>
+            <hr>
+            <div class="social">
+             						<span class="ion-social-tumblr"></span>
+             						<span class="ion-social-facebook"></span>
+             						<span class="ion-social-instagram"></span>
+             						<span class="ion-social-pinterest"></span>
+             						<span class="ion-social-foursquare"></span>
+            </div>
+        </header>
+
+           
+           
+           
+          </div><!-- CHIUSURA LATO INFO -->
+          
+          <!--INIZIO PORTFOLIO-->
+      <div class="col-md-8 col-lg-8">
+    <section class="container-fluid gallery bg-faded">
+      <header class="">
+        <h1 class="text-center">Illustrations</h1>
+      </header>
+      <div class="grid">
+        <a href="#" class="grid__item grid__sizer">
+          <div class="item__overlay">
+            <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+          </div>
+          <img src="img/14579107988_a84cd0de96_z.jpg" alt="Credits to Unsplash.com" />
+        </a>
+        <a href="#" class="grid__item grid__item--high">
+          <div class="item__overlay">
+            <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+          </div>
+          <img src="img/15225504192_777aef8c7d_z.jpg" alt="Credits to Unsplash.com" />
+        </a>
+        <a href="#" class="grid__item">
+          <div class="item__overlay">
+            <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+          </div>
+          <img src="img/21148640626_9d2111e253_z.jpg" alt="Credits to Unsplash.com" />
+        </a>
+        <a href="#" class="grid__item grid__item--high">
+          <div class="item__overlay">
+            <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+          </div>
+          <img src="img/floral%20pattern.jpg" alt="Credits to Unsplash.com" />
+        </a>
+        <a href="#" class="grid__item">
+          <div class="item__overlay">
+            <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+          </div>
+          <img src="img/21148640626_9d2111e253_z.jpg" alt="Credits to Unsplash.com" />
+        </a>
+        <a href="#" class="grid__item">
+          <div class="item__overlay">
+            <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+          </div>
+          <img src="img/floral%20pattern.jpg" alt="" />
+        </a>
+        <a href="#" class="grid__item">
+          <div class="item__overlay">
+            <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+          </div>
+          <img src="img/14579107988_a84cd0de96_z.jpg" alt="Credits to Unsplash.com" />
+        </a>
+        <a href="#" class="grid__item">
+          <div class="item__overlay">
+            <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+          </div>
+          <img src="img/16644567446_0e25a06d50_z.jpg" alt="Credits to Unsplash.com" />
+        </a>
+        <a href="#" class="grid__item grid__item--high">
+          <div class="item__overlay">
+            <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+          </div>
+          <img src="img/11300901603_d289a87a40_z.jpg" alt="Credits to Unsplash.com" />
+        </a>
+        <a href="#" class="grid__item">
+          <div class="item__overlay">
+            <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+          </div>
+          <img src="img/14579107988_a84cd0de96_z.jpg" alt="Credits to Unsplash.com" />
+        </a>
+        <a href="#" class="grid__item">
+          <div class="item__overlay">
+            <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+          </div>
+          <img src="img/15225504192_777aef8c7d_z.jpg" alt="Credits to Unsplash.com" />
+        </a>
+        <a href="#" class="grid__item">
+          <div class="item__overlay">
+            <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+          </div>
+          <img src="img/11300901603_d289a87a40_z.jpg" alt="Credits to Unsplash.com" />
+        </a>
+      </div>
+    </section>
+    <!-- Modal -->
+    <div id="modalPicture" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalPictureLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!-- Modal - header -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="fa fa-times" aria-hidden="true"></span>
+              <span class="sr-only">Close</span>
+            </button>
+          </div><!-- .end Modal - header -->
+          <!-- Modal - body -->
+          <div class="modal-body">
+            <img class="js-modal-image" src="" alt="Credits to Unsplash.com" />
+          </div><!-- .end Modal - body -->
+          <!-- Modal - footer -->
+          <div class="modal-footer">
+            <a class="js-download m-r" href="#" aria-label="Download" download>
+              <span class="fa fa-download" aria-hidden="true"></span>
+              <span class="sr-only">Download</span>
+            </a>
+            <a class="js-heart m-r" href="#" aria-label="Like">
+              <span class="fa fa-heart" aria-hidden="true"></span>
+              <span class="sr-only">Like</span>
+            </a>
+            <a class="m-r" href="https://twitter.com/home?status=%40alexdevero%20" target="_blank" aria-label="Comment">
+              <span class="fa fa-comment" aria-hidden="true"></span>
+              <span class="sr-only">Comment</span>
+            </a>
+            <a href="https://twitter.com/home?status=Check%20out%20this%20Mansory%20Gallery%20tutorial%20on%20http%3A//blog.alexdevero.com/%20%23design%20%23webdesign" target="_blank" aria-label="Share">
+              <span class="fa fa-twitter" aria-hidden="true"></span>
+              <span class="sr-only">Tweet it</span>
+            </a>
+          </div><!-- .end Modal - footer -->
+        </div>
+      </div>
+    </div>
+    <!-- .end modal -->
+        </div>  <!-- CHIUSURA GALLERIA PORTFOLIO -->
+          
+      </div><!--CHIUSURA PRIMA ROW -->
+      
+      <hr>
+      <!--INIZIO SEZIONE CONTATTI E MAPPA -->
+
+      
+            <section class="map col-md-12">
+        
+        <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=13.578200340270996%2C41.246208255340726%2C13.59236240386963%2C41.25325828802832&amp;layer=hot&amp;marker=41.24973336677863%2C13.585281372070312" style="margin-bottom: 5%;"></iframe>
+    </section>
+
+      <hr>
+      <section style="margin-top: 3%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<span class="dark-icon mb5 pe-7s-home"></span>
+					<h5 class="no-margin-bottom spaced ion-ios-location"> <a>Viale dei Ciliegi, Roma, Italia</a></h5>
+				</div>
+
+				<div class="col-sm-4 mt30-xs text-center bottomReveal">
+					<span class="dark-icon mb5 pe-7s-phone"></span>
+                    <h5 class="no-margin-bottom spaced ion-ios-telephone"> <a>+1 234 567 89100</a></h5>
+				</div>
+				<div class="col-sm-4 mt30-xs text-center topReveal">
+					<span class="dark-icon mb5 pe-7s-plug"></span>
+					<h5 class="no-margin-bottom spaced ion-ios-email"> <a>info@info.com</a></h5>
+				</div>
+			</div>
+        </div>
+	</section>
+	<!-- FINE MODULO CONTATTI -->
+
+      <!-- INIZIO CONTATTI -->
+	<section id="contact" class="section-padding section-border-top"  style="margin-top: 3%;">
+		<div class="container">
+			<div class="row mb40">
+				<div class="col-xs-12 text-center">
+					<h2>Contact</h2>
+					<span class="divider divider-center divider-dark no-margin-bottom"></span>
+				</div>
+			</div>
+			<!-- FORM -->
+			<div class="row">
+				<div class="col-md-9 col-md-offset-2">
+					<form data-toggle="validator">
+						<!-- Subject -->
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<div class="controls">
+										<input class="form-control" data-error="This section is required."
+										id="msg_subject" placeholder="Subject *" required="" type="text">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<div class="controls">
+										<input class="form-control" data-error="This section is required." id="name" placeholder="Your Name *" required="" type="text">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<div class="controls">
+										<input class="email form-control" data-error="This section is required." id="email" placeholder="Email *" required="" type="email">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<div class="controls">
+										<textarea class="form-control" data-error="This section is required." id="message" placeholder="Message *" required="" rows="5"></textarea>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12 text-center">
+								<div class="h5 hidden"></div> 
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12 text-center">
+								<button type="submit" id="submit" class="">Invia</button>
+                            </div>
+                        </div>
+                    </form>
+			</div>
+		</div>
+	</section>
+	<!-- FINE CONTATTI -->
+      
+        
+        
+	<!-- INIZIO INFO CONTANTO -->
+
+
+<hr>
+	<!-- INIZIO FOOTER -->
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					&copy; 2017. All Rights Reserved.
+				</div>
+			</div>
+        </div>
+	</footer>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js'></script>
+    <script>(function() {
+ // Masonry grid setup
+ $(".grid").masonry({
+  itemSelector: ".grid__item",
+  columnWidth: ".grid__sizer",
+  gutter: 15,
+  percentPosition: true
+ });
+ // Image replacement handler
+ $(document).on("click", ".js-button", function() {
+  var imageSrc = $(this).parents(".grid__item").find("img").attr("src");
+  $(".js-download").attr("href", imageSrc);
+  $(".js-modal-image").attr("src", imageSrc);
+  $(document).on("click", ".js-heart", function() {
+   $(this).toggleClass("active");
+  });
+ });
+})();</script>
+  </body>
+</html>
